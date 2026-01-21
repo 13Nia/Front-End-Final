@@ -1,0 +1,395 @@
+@font-face {
+    font-family: 'FiraGO-Bold';
+    src:url(../font/FiraGO-Bold.woff2) format('woff2'),
+        url(../font/FiraGO-Bold.woff) format('woff');
+}
+
+
+@font-face {
+    font-family: 'FiraGO-Semibold';
+    src:url(../font/FiraGO-SemiBold.woff2) format('woff2'),
+        url(../font/FiraGO-SemiBold.woff) format('woff');
+}
+
+
+@font-face {
+    font-family: 'FiraGO-Regular';
+    src:url(../font/FiraGO-Regular.woff2) format('woff2'),
+        url(../font/FiraGO-Regular.woff) format('woff');
+}
+
+body {
+    font-family: 'FiraGO-Regular',  sans-serif;
+}
+/*-------------------------------------------*/
+
+
+
+
+/* ---- login page ----*/ 
+
+.heading2 {
+    font-family: 'FiraGO-Semibold', sans-serif;
+    font-size: 36px;
+    color: black;
+}
+
+.paragraph {
+    font-family: 'FiraGO-Regular', sans-serif;
+    font-size: 16px;
+    color: #494949;
+    line-height: 24px;
+}
+
+.logo_login img {
+    width: 112px;
+    height: 50px;
+}
+
+.login_middle {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+}
+
+.heading2_login {
+    margin-bottom: 10px;
+}
+
+.paragraph_login {
+    margin-bottom: 32px;
+}
+
+#loginForm {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+#loginForm input {
+    padding: 16px 16px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    outline: none;
+    transition: 0.3s;
+}
+
+#loginForm input:focus {
+    border-color: #8447ff;
+}
+
+.password_box {
+    position: relative;
+    width: 100%;
+}
+
+.password_box img {
+    position: absolute;
+    right: 14px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    width: 20px;
+    opacity: 0.7;
+    transition: 0.2s;
+}
+
+.password_box img:hover {
+    opacity: 1;
+}
+
+.password_box input {
+    width: 100%;
+    padding-right: 48px;
+}
+.form_row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+}
+
+.form_row a {
+  color: #8447ff;
+}
+
+.blue_button {
+    margin-top: 12px;
+    padding: 16px;
+    background: #8447ff;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.blue_button:hover {
+    background-color: #530fdc;
+}
+
+.divider {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin: 24px 0;
+    font-size: 13px;
+    color: #999;
+}
+
+.google_button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    padding: 12px;
+    background: white;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.google_button:hover {
+    background-color: #ebebeb;
+}
+
+.register {
+    margin-top: 16px;
+    font-size: 16px;
+    text-align: center;
+}
+
+.register a {
+    color:#8447FF;
+}
+
+.login_top {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 32px;
+    gap: 12px;
+}
+
+.login_image {
+    width: 50%;
+}
+
+.login_image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.login_container {
+    display: flex;
+    padding-left: 144px ;
+}
+
+.login_container_left {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+}
+
+
+.left_arrow_login {
+    font-size: 24px;
+    background-color: #e7dbfe;
+    color: #8447FF;
+    cursor: pointer;
+
+    width: 44px;
+    height: 44px;
+
+    border-radius: 50%;
+    border: 2px solid #8447FF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+
+}
+
+.left_arrow_login:hover {
+    background-color: #8447FF;
+    color: white;
+    transform:scale(1.1);
+}
+
+/* ---- error section ---*/
+
+.error_text {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    margin-top: 2px;
+    color: #F44336;
+    visibility: hidden;
+}
+
+.error_icon {
+    color: #F44336;
+    font: 6px;
+    margin-right: 6px;
+}
+
+.eye_off {
+    margin-top: -12px;
+}
+
+
+
+/*----------------responsive -----------*/
+
+
+/* -------- 1024px -------- */
+@media (max-width: 1024px) {
+    .login_container {
+        padding-left: 80px;
+    }
+
+    .login_middle {
+        max-width: 420px;
+    }
+
+    .login_image {
+        width: 45%;
+    }
+
+    .login_container_left {
+        width: 55%;
+    }
+}
+
+/* -------- 768px -------- */
+@media (max-width: 768px) {
+    .login_container {
+        flex-direction: column;
+        padding: 40px;
+    }
+
+    .login_container_left {
+        width: 100%;
+        align-items: center;
+    }
+
+    .login_middle {
+        max-width: 100%;
+    }
+
+    .login_image {
+        display: none;
+    }
+
+    .login_top {
+        position: static;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+        margin-bottom: 32px;
+    }
+
+    .login_top a {
+        order: 1;
+    }
+
+    .logo_login {
+        order: 2;
+    }
+
+    .login_image {
+        display: none;
+    }
+}
+
+/* -------- 480px -------- */
+@media (max-width: 480px) {
+    .login_container {
+        padding: 24px;
+    }
+
+    .heading2_login {
+        font-size: 22px;
+    }
+
+    .paragraph_login {
+        font-size: 14px;
+    }
+
+    #loginForm input {
+        padding: 14px;
+        font-size: 14px;
+    }
+
+    .blue_button,
+    .google_button {
+        padding: 14px;
+        font-size: 14px;
+    }
+
+    .form_row {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+    }
+
+    .register {
+        font-size: 14px;
+    }
+
+    .login_top a {
+        order: 1;
+    }
+
+    .logo_login {
+        order: 2;
+    }
+
+    .login_image {
+        display: none;
+    }
+}
+
+/* -------- 320px -------- */
+@media (max-width: 320px) {
+    .login_container {
+        padding: 16px;
+    }
+
+    .heading2_login {
+        font-size: 20px;
+    }
+
+    .paragraph_login {
+        font-size: 13px;
+    }
+
+    .left_arrow_login {
+        width: 36px;
+        height: 36px;
+        font-size: 18px;
+    }
+
+    .logo_login img {
+        width: 90px;
+        height: auto;
+    }
+
+    .login_top a {
+        order: 1;
+    }
+
+    .logo_login {
+        order: 2;
+    }
+
+    .login_image {
+        display: none;
+    }
+}

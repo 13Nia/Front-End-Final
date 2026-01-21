@@ -1,0 +1,904 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <script src="./js/script.js" defer></script>
+    <script src="./js/slider.js" defer></script>
+    <script src="./js/cookie_and_burger.js" defer ></script>
+
+    <title>NIA FRONT FINAL</title>
+  </head>
+
+  <body>
+    <header class="navbar">
+      <a href="./index.html">
+        <div class="logo">
+          <img src="./svgs/LOGO.svg" alt="logo" />
+        </div>
+      </a>
+
+      <div class="menu_toggle" id="burger">
+          <span></span>
+          <span></span>
+          <span></span>
+      </div>
+
+      <div class="right_panel">
+        <nav class="nav-links">
+          <a href="#"
+            >კურსები<span class="material-symbols-outlined nav-arrow"
+              >keyboard_arrow_down</span
+            ></a
+          >
+          <a href="#"
+            >ვიდეო ლექციები<span class="material-symbols-outlined nav-arrow"
+              >keyboard_arrow_down</span
+            ></a
+          >
+          <a href="#"
+            >ბიბლიოთეკა<span class="material-symbols-outlined nav-arrow"
+              >keyboard_arrow_down</span
+            ></a
+          >
+          <a href="#">კონტაქტი</a>
+        </nav>
+
+        <div class="nav-icons">
+          <span class="material-symbols-outlined icon">search</span>
+          <span class="material-symbols-outlined icon">favorite</span>
+          <span class="material-symbols-outlined icon">local_mall</span>
+        </div>
+
+        <a href="./login.html">
+          <button class="login_button">შესვლა</button>
+        </a>
+
+      </div>
+    </header>
+
+    <section class="slider">
+      <div class="slides">
+        <div class="slide slide_active">
+          <img src="./images/slider_images/Developer.png" alt="Developer" />
+          <div class="slide_content">
+            <h1>გახდი დეველოპერი!</h1>
+            <p>შეისწავლე Front-end დეველოპმენტი</p>
+            <button class="button_arrow">
+              სრულად ნახვა
+              <span class="material-symbols-outlined arrow_icon">
+                arrow_right_alt
+              </span>
+            </button>
+          </div>
+        </div>
+
+        <div class="slide">
+          <img src="./images/slider_images/Designer.png" alt="Designer" />
+          <div class="slide_content">
+            <h1>გახდი დიზაინერი!</h1>
+            <p>შეისწავლე გრაფიკული დიზაინი</p>
+            <button class="button_arrow">
+              სრულად ნახვა
+              <span class="material-symbols-outlined arrow_icon">
+                arrow_right_alt
+              </span>
+            </button>
+          </div>
+        </div>
+
+        <div class="slide">
+          <img src="./images/slider_images/Businessman.png" alt="Businessman" />
+          <div class="slide_content">
+            <h1>გახდი ბიზნესმენი!</h1>
+            <p>შექმენი საკუთარი ბიზნესი/სტარტაპი</p>
+            <button class="button_arrow">
+              სრულად ნახვა
+              <span class="material-symbols-outlined arrow_icon">
+                arrow_right_alt
+              </span>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <span class="material-symbols-outlined arrow_left1"
+        >arrow_back_ios_new</span
+      >
+      <span class="material-symbols-outlined arrow_right1"
+        >arrow_forward_ios</span
+      >
+
+      <div class="slider_dots">
+        <span class="dot active"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+      </div>
+    </section>
+
+    <section class="section2">
+      <div class="top_content">
+        <div class="left_text">
+          <h2 class="heading2">რატომ ჩვენი</h2>
+          <h2 class="heading2_feradi">აკადემია?</h2>
+        </div>
+        <div class="text_wrapper">
+          <p class="paragraph">
+            SkillUP აკადემია სთავაზობს პრაქტიკულ და თანამედროვე ცოდნას კარიერული
+            განვითარებისთვის. ჩვენი კურსები მორგებულია ბაზრის მოთხოვნებს და
+            მუდმივად ერგება თანამედროვე ტრენდებს.
+          </p>
+        </div>
+      </div>
+
+      <div class="cards_below">
+        <div class="card">
+          <div class="card_photo">
+            <img
+              class="card_photo"
+              src="./svgs/card_svgs/money.svg"
+              alt="fasebi"
+            />
+          </div>
+
+          <div class="card_triangle">
+            <img src="./svgs/triangle icon.svg" alt="triangle" />
+          </div>
+
+          <h3 class="card_satauri">ხელმისაწვდომი ფასები</h3>
+          <p class="paragraph">
+            SkillUP აკადემია სთავაზობს ხელმისაწვდომ ფასებს, რათა ხარისხიანი
+            განათლება ყველასთვის მარტივად მისაწვდომი გახდეს.
+          </p>
+        </div>
+
+        <div class="card">
+          <div class="card_photo">
+            <img
+              class="card_photo"
+              src="./svgs/card_svgs/computer.svg"
+              alt="swavleba"
+            />
+          </div>
+
+          <div class="card_triangle">
+            <img src="./svgs/triangle icon.svg" alt="triangle" />
+          </div>
+
+          <h3 class="card_satauri">პრაქტიკაზე დაფუძნებული სწავლება</h3>
+          <p class="paragraph">
+            SkillUP აკადემია სთავაზობს პრაქტიკაზე დაფუძნებულ სწავლებას რეალური
+            უნარების განვითარებისთვის.
+          </p>
+        </div>
+
+        <div class="card">
+          <div class="card_photo">
+            <img
+              class="card_photo"
+              src="./svgs/card_svgs/math.svg"
+              alt="personali"
+            />
+          </div>
+
+          <div class="card_triangle">
+            <img src="./svgs/triangle icon.svg" alt="triangle" />
+          </div>
+
+          <h3 class="card_satauri">კვალიფიციური პერსონალი</h3>
+          <p class="paragraph">
+            SkillUP აკადემია უზრუნველყოფს კვალიფიციურ მენტორებსა და ლექტორებს
+            მაღალი ხარისხის სწავლებისთვის.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section3">
+      <div class="section3_container">
+        <div class="courses_header">
+          <h2 class="heading2">პოპულარული კურსები</h2>
+          <button class="button_outline">ყველას ნახვა</button>
+        </div>
+
+        <div class="courses_wrapper">
+
+          <div class="course_cards">
+            <div class="course_card">
+              <div class="image_div">
+                <img
+                  src="./images/courses_cards_images/unity.png"
+                  alt="Unity"
+                />
+              </div>
+              <div class="sale">
+                <p class="sale_para">-50%</p>
+                <div class="sale_icon">
+                  <img src="./svgs/sale icon.svg" alt="Sale" />
+                </div>
+              </div>
+              <div class="places">
+                <div class="places_photos">
+                  <img src="./images/people_images/1.png" alt="1person" />
+                  <img src="./images/people_images/2.png" alt="2person" />
+                  <img src="./images/people_images/3.png" alt="3person" />
+                  <img src="./images/people_images/4.png" alt="4person" />
+                  <img src="./images/people_images/1.png" alt="5person" />
+                </div>
+                <p class="sale_para">40 ადგილი</p>
+              </div>
+              <div class="below_content">
+                <div class="top_text">
+                  <p class="top_para">1 - 28 ივლისი 2024</p>
+                  <div class="top_para_peradi">დამწყები</div>
+                </div>
+                <p class="course_heading">თამაშების დეველოპმენტი</p>
+                <p class="para_patara">
+                  Unity-ში თამაშების დეველოპმენტის კურსი გასწავლით 2D და 3D
+                  თამაშების შექმნას ნულიდან, თამაშის ლოგიკის...
+                </p>
+                <div class="bottom_text">
+                  <div class="pasebi">
+                    <div class="rating">
+                      <span class="material-symbols-outlined starfirst">
+                        star_rate
+                      </span>
+                      <span class="material-symbols-outlined starfirst">
+                        star_rate
+                      </span>
+                      <span class="material-symbols-outlined starfirst">
+                        star_rate
+                      </span>
+                      <span class="material-symbols-outlined starfirst">
+                        star_rate
+                      </span>
+                      <span class="material-symbols-outlined starfirst">
+                        star_rate
+                      </span>
+                    </div>
+
+                    <div class="right_part">
+                      <p class="old_price_para">1400₾</p>
+                      <p class="new_price">700₾</p>
+                    </div>
+                  </div>
+
+                  <hr class="card_line" />
+
+                  <div class="below_line_content">
+                    <div class="lecture_number">
+                      <span class="material-symbols-outlined lecture">
+                        bookmark
+                      </span>
+                      <p class="sale_para">10 ლექცია</p>
+                    </div>
+
+                    <div class="time_number">
+                      <span class="material-symbols-outlined time">
+                        schedule
+                      </span>
+                      <p class="sale_para">30 საათი</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="course_card">
+              <div class="image_div">
+                <img
+                  src="./images/courses_cards_images/hacking.png"
+                  alt="Hacking"
+                />
+              </div>
+              <div class="sale">
+                <p class="sale_para">-50%</p>
+                <div class="sale_icon">
+                  <img src="./svgs/sale icon.svg" alt="Sale" />
+                </div>
+              </div>
+              <div class="places">
+                <div class="places_photos">
+                  <img src="./images/people_images/1.png" alt="1person" />
+                  <img src="./images/people_images/2.png" alt="2person" />
+                  <img src="./images/people_images/3.png" alt="3person" />
+                  <img src="./images/people_images/4.png" alt="4person" />
+                  <img src="./images/people_images/1.png" alt="5person" />
+                </div>
+                <p class="sale_para">30 ადგილი</p>
+              </div>
+              <div class="below_content">
+                <div class="top_text">
+                  <p class="top_para">1 - 28 ივლისი 2024</p>
+                  <div class="top_para_peradi_samoy">სამოყვარულო</div>
+                </div>
+                <p class="course_heading">ეთიკური ჰაკინგი</p>
+                <p class="para_patara">
+                  ეთიკური ჰაკინგის კურსი გასწავლით სისტემებისა და ქსელების
+                  უსაფრთხოების შემოწმებას, კიბერშეტევებისგან დაცვას...
+                </p>
+                <div class="bottom_text">
+                  <div class="pasebi">
+                    <div class="rating">
+                      <span class="material-symbols-outlined starfirst">
+                        star_rate
+                      </span>
+                      <span class="material-symbols-outlined starfirst">
+                        star_rate
+                      </span>
+                      <span class="material-symbols-outlined starfirst">
+                        star_rate
+                      </span>
+                      <span class="material-symbols-outlined starfirst">
+                        star_rate
+                      </span>
+                      <span class="material-symbols-outlined starfirst">
+                        star_rate
+                      </span>
+                    </div>
+
+                    <div class="right_part">
+                      <p class="old_price_para">1600₾</p>
+                      <p class="new_price">800₾</p>
+                    </div>
+                  </div>
+
+                  <hr class="card_line" />
+
+                  <div class="below_line_content">
+                    <div class="lecture_number">
+                      <span class="material-symbols-outlined lecture">
+                        bookmark
+                      </span>
+                      <p class="sale_para">10 ლექცია</p>
+                    </div>
+
+                    <div class="time_number">
+                      <span class="material-symbols-outlined time">
+                        schedule
+                      </span>
+                      <p class="sale_para">30 საათი</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="course_card">
+              <div class="image_div">
+                <img
+                  src="./images/courses_cards_images/design.png"
+                  alt="Design"
+                />
+              </div>
+              <div class="sale">
+                <p class="sale_para">-20%</p>
+                <div class="sale_icon">
+                  <img src="./svgs/sale icon.svg" alt="Sale" />
+                </div>
+              </div>
+              <div class="places">
+                <div class="places_photos">
+                  <img src="./images/people_images/1.png" alt="1person" />
+                  <img src="./images/people_images/2.png" alt="2person" />
+                  <img src="./images/people_images/3.png" alt="3person" />
+                  <img src="./images/people_images/4.png" alt="4person" />
+                  <img src="./images/people_images/1.png" alt="5person" />
+                </div>
+                <p class="sale_para">20 ადგილი</p>
+              </div>
+              <div class="below_content">
+                <div class="top_text">
+                  <p class="top_para">1 - 28 ივლისი 2024</p>
+                  <div class="top_para_peradi_prof">პროფესიონალი</div>
+                </div>
+                <p class="course_heading">გრაფიკული დიზაინი</p>
+                <p class="para_patara">
+                  გრაფიკული დიზაინის კურსი გასწავლით ვიზუალური კომუნიკაციის
+                  შექმნას ლოგოების, ბანერების, სოციალური მედიის...
+                </p>
+                <div class="bottom_text">
+                  <div class="pasebi">
+                    <div class="rating">
+                      <span class="material-symbols-outlined starfirst">
+                        star_rate
+                      </span>
+                      <span class="material-symbols-outlined starfirst">
+                        star_rate
+                      </span>
+                      <span class="material-symbols-outlined starfirst">
+                        star_rate
+                      </span>
+                      <span class="material-symbols-outlined starfirst">
+                        star_rate
+                      </span>
+                      <span class="material-symbols-outlined starfirst">
+                        star_rate
+                      </span>
+                    </div>
+
+                    <div class="right_part">
+                      <p class="old_price_para">1000₾</p>
+                      <p class="new_price">800₾</p>
+                    </div>
+                  </div>
+
+                  <hr class="card_line" />
+
+                  <div class="below_line_content">
+                    <div class="lecture_number">
+                      <span class="material-symbols-outlined lecture">
+                        bookmark
+                      </span>
+                      <p class="sale_para">10 ლექცია</p>
+                    </div>
+
+                    <div class="time_number">
+                      <span class="material-symbols-outlined time">
+                        schedule
+                      </span>
+                      <p class="sale_para">30 საათი</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="course_card">
+              <div class="image_div">
+                <img src="./images/courses_cards_images/QA.png" alt="QA" />
+              </div>
+              <div class="places">
+                <div class="places_photos">
+                  <img src="./images/people_images/1.png" alt="1person" />
+                  <img src="./images/people_images/2.png" alt="2person" />
+                  <img src="./images/people_images/3.png" alt="3person" />
+                  <img src="./images/people_images/4.png" alt="4person" />
+                  <img src="./images/people_images/1.png" alt="5person" />
+                </div>
+                <p class="sale_para">20 ადგილი</p>
+              </div>
+              <div class="below_content">
+                <div class="top_text">
+                  <p class="top_para">1 - 28 ივლისი 2024</p>
+                  <div class="top_para_peradi">დამწყები</div>
+                </div>
+                <p class="course_heading">ციფრული პროდუქტის ტესტირება</p>
+                <p class="para_patara">
+                  ციფრული პროდუქტების ტესტირების კურსი გასწავლით ვებსაიტებისა და
+                  აპლიკაციების...
+                </p>
+                <div class="bottom_text">
+                  <div class="pasebi">
+                    <div class="rating">
+                      <span class="material-symbols-outlined starfirst">
+                        star_rate
+                      </span>
+                      <span class="material-symbols-outlined starfirst">
+                        star_rate
+                      </span>
+                      <span class="material-symbols-outlined starfirst">
+                        star_rate
+                      </span>
+                      <span class="material-symbols-outlined starfirst">
+                        star_rate
+                      </span>
+                      <span class="material-symbols-outlined starfirst">
+                        star_rate
+                      </span>
+                    </div>
+
+                    <div class="right_part">
+                      <p class="new_price">700₾</p>
+                    </div>
+                  </div>
+
+                  <hr class="card_line" />
+
+                  <div class="below_line_content">
+                    <div class="lecture_number">
+                      <span class="material-symbols-outlined lecture">
+                        bookmark
+                      </span>
+                      <p class="sale_para">10 ლექცია</p>
+                    </div>
+
+                    <div class="time_number">
+                      <span class="material-symbols-outlined time">
+                        schedule
+                      </span>
+                      <p class="sale_para">30 საათი</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="section4">
+      <div class="section4_wrapper">
+              <div class="magla_section">
+        <div class="magla_text">
+          <h2 class="heading2">რომელ</h2>
+          <h2 class="heading2_feradi">მიმართულებებს</h2>
+          <h2 class="heading2">ისწავლი აკადემიაში?</h2>
+        </div>
+
+        <div class="dabla_text">
+          <p class="paragraph">
+            აკადემიაში შეისწავლი თანამედროვე ტექნოლოგიურ მიმართულებებს, რომლებიც
+            მოიცავს პროგრამირებას, დიზაინს, ციფრული პროდუქტების განვითარებას და
+            მრავალ სხვას.
+          </p>
+        </div>
+      </div>
+
+      <div class="infinity_loop">
+        <div class="loop1">
+          <div class="loop_card">
+            <img src="./svgs/loop_svgs/Business.svg" alt="Business" />
+            <div class="loop_text">
+              <p class="course_heading">ბიზნესი</p>
+              <p class="course_heading">Business</p>
+            </div>
+          </div>
+          <div class="loop_card">
+            <img
+              src="./svgs/loop_svgs/Personal_deleopment.svg"
+              alt="Personal development"
+            />
+            <div class="loop_text">
+              <p class="course_heading">პერსონალური განვითარება</p>
+              <p class="course_heading">Personal development</p>
+            </div>
+          </div>
+          <div class="loop_card">
+            <img src="./svgs/loop_svgs/design.svg" alt="Design" />
+            <div class="loop_text">
+              <p class="course_heading">დიზაინი</p>
+              <p class="course_heading">Design</p>
+            </div>
+          </div>
+          <div class="loop_card">
+            <img src="./svgs/loop_svgs/development.svg" alt="Development" />
+            <div class="loop_text">
+              <p class="course_heading">დეველოპმენტი</p>
+              <p class="course_heading">Development</p>
+            </div>
+          </div>
+          <div class="loop_card">
+            <img src="./svgs/loop_svgs/marketing.svg" alt="Marketing" />
+            <div class="loop_text">
+              <p class="course_heading">მარკეტინგი</p>
+              <p class="course_heading">Marketing</p>
+            </div>
+          </div>
+          <div class="loop_card">
+            <img src="./svgs/loop_svgs/it.svg" alt="IT" />
+            <div class="loop_text">
+              <p class="course_heading">ტექნოლოგიები</p>
+              <p class="course_heading">IT and software</p>
+            </div>
+          </div>
+
+          <!-- another duplicates -->
+
+          <div class="loop_card">
+            <img src="./svgs/loop_svgs/Business.svg" alt="Business" />
+            <div class="loop_text">
+              <p class="course_heading">ბიზნესი</p>
+              <p class="course_heading">Business</p>
+            </div>
+          </div>
+          <div class="loop_card">
+            <img
+              src="./svgs/loop_svgs/Personal_deleopment.svg"
+              alt="Personal development"
+            />
+            <div class="loop_text">
+              <p class="course_heading">პერსონალური განვითარება</p>
+              <p class="course_heading">Personal development</p>
+            </div>
+          </div>
+          <div class="loop_card">
+            <img src="./svgs/loop_svgs/design.svg" alt="Design" />
+            <div class="loop_text">
+              <p class="course_heading">დიზაინი</p>
+              <p class="course_heading">Design</p>
+            </div>
+          </div>
+          <div class="loop_card">
+            <img src="./svgs/loop_svgs/development.svg" alt="Development" />
+            <div class="loop_text">
+              <p class="course_heading">დეველოპმენტი</p>
+              <p class="course_heading">Development</p>
+            </div>
+          </div>
+          <div class="loop_card">
+            <img src="./svgs/loop_svgs/marketing.svg" alt="Marketing" />
+            <div class="loop_text">
+              <p class="course_heading">მარკეტინგი</p>
+              <p class="course_heading">Marketing</p>
+            </div>
+          </div>
+          <div class="loop_card">
+            <img src="./svgs/loop_svgs/it.svg" alt="IT" />
+            <div class="loop_text">
+              <p class="course_heading">ტექნოლოგიები</p>
+              <p class="course_heading">IT and software</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="loop1 reversed">
+          <div class="loop_card">
+            <img src="./svgs/loop_svgs/Business.svg" alt="Business" />
+            <div class="loop_text">
+              <p class="course_heading">ბიზნესი</p>
+              <p class="course_heading">Business</p>
+            </div>
+          </div>
+          <div class="loop_card">
+            <img
+              src="./svgs/loop_svgs/Personal_deleopment.svg"
+              alt="Personal development"
+            />
+            <div class="loop_text">
+              <p class="course_heading">პერსონალური განვითარება</p>
+              <p class="course_heading">Personal development</p>
+            </div>
+          </div>
+          <div class="loop_card">
+            <img src="./svgs/loop_svgs/design.svg" alt="Design" />
+            <div class="loop_text">
+              <p class="course_heading">დიზაინი</p>
+              <p class="course_heading">Design</p>
+            </div>
+          </div>
+          <div class="loop_card">
+            <img src="./svgs/loop_svgs/development.svg" alt="Development" />
+            <div class="loop_text">
+              <p class="course_heading">დეველოპმენტი</p>
+              <p class="course_heading">Development</p>
+            </div>
+          </div>
+          <div class="loop_card">
+            <img src="./svgs/loop_svgs/marketing.svg" alt="Marketing" />
+            <div class="loop_text">
+              <p class="course_heading">მარკეტინგი</p>
+              <p class="course_heading">Marketing</p>
+            </div>
+          </div>
+          <div class="loop_card">
+            <img src="./svgs/loop_svgs/it.svg" alt="IT" />
+            <div class="loop_text">
+              <p class="course_heading">ტექნოლოგიები</p>
+              <p class="course_heading">IT and software</p>
+            </div>
+          </div>
+
+          <!-- another duplicates -->
+
+          <div class="loop_card">
+            <img src="./svgs/loop_svgs/Business.svg" alt="Business" />
+            <div class="loop_text">
+              <p class="course_heading">ბიზნესი</p>
+              <p class="course_heading">Business</p>
+            </div>
+          </div>
+          <div class="loop_card">
+            <img
+              src="./svgs/loop_svgs/Personal_deleopment.svg"
+              alt="Personal development"
+            />
+            <div class="loop_text">
+              <p class="course_heading">პერსონალური განვითარება</p>
+              <p class="course_heading">Personal development</p>
+            </div>
+          </div>
+          <div class="loop_card">
+            <img src="./svgs/loop_svgs/design.svg" alt="Design" />
+            <div class="loop_text">
+              <p class="course_heading">დიზაინი</p>
+              <p class="course_heading">Design</p>
+            </div>
+          </div>
+          <div class="loop_card">
+            <img src="./svgs/loop_svgs/development.svg" alt="Development" />
+            <div class="loop_text">
+              <p class="course_heading">დეველოპმენტი</p>
+              <p class="course_heading">Development</p>
+            </div>
+          </div>
+          <div class="loop_card">
+            <img src="./svgs/loop_svgs/marketing.svg" alt="Marketing" />
+            <div class="loop_text">
+              <p class="course_heading">მარკეტინგი</p>
+              <p class="course_heading">Marketing</p>
+            </div>
+          </div>
+          <div class="loop_card">
+            <img src="./svgs/loop_svgs/it.svg" alt="IT" />
+            <div class="loop_text">
+              <p class="course_heading">ტექნოლოგიები</p>
+              <p class="course_heading">IT and software</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+
+
+        
+      </div>
+    </section>
+
+    <section class="section5">
+      <div class="Video_lectures">
+        <div class="Video_lectures_text">
+          <h2 class="heading2">ვიდეო ლექციები</h2>
+          <div class="para_div">
+            <p class="paragraph">SkillUp-ის ვიდეო ლექციები გაძლევს შესაძლებლობას ისწავლო შენთვის მოსახერხებელ დროსა და ტემპში, პროფესიონალების მიერ მომზადებული პრაქტიკული და გასაგები მასალებით.ისინი აერთიანებს თეორიასა და რეალურ მაგალითებს, რაც ცოდნის გამოყენებას ყოველდღიურ პრაქტიკაში ამარტივებს.ნებისმიერ დროს შეგიძლია დაუბრუნდე მასალას, გაიმეორო მნიშვნელოვანი თემები და გააძლიერო შენი უნარები.</p>
+          </div>
+          <button class="login_button lurji_button">სრულად ნახვა</button>
+        </div>
+        <img src="./svgs/big_svgs/ვიდეო ლექციები.svg" alt="Video Lectures">
+      </div>
+    </section>
+
+    <section class="section6">
+      <div class="Video_lectures biblioteka">
+                <img src="./svgs/big_svgs/ბიბლიოთეკა.svg" alt="Library">
+        <div class="Video_lectures_text">
+          <h2 class="heading2">ბიბლიოთეკა</h2>
+          <div class="para_div">
+            <p class="paragraph">SkillUP-ის ბიბლიოთეკა არის ცოდნის სივრცე, სადაც თავმოყრილია სასწავლო მასალები, გზამკვლევები და რესურსები, რომლებიც გეხმარება შენი უნარების გაღრმავებაში.
+აქ მარტივად იპოვი საჭირო ინფორმაციას სხვადასხვა მიმართულებით და შეძლებ სწავლას შენთვის მოსახერხებელ ტემპში, რეალურ პრაქტიკაზე დაფუძნებული მასალებით.</p>
+          </div>
+          <button class="login_button lurji_button">სრულად ნახვა</button>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="momxmareblebi">
+      <div class="section_container">
+        <div class="satauri">
+          <div class="satauri_text">
+            <div class="satauri_magla">
+              <h2 class="heading2">როგორ გვაფასებენ</h2>
+              <h2 class="heading2_feradi">მომხმარებლები?</h2>
+            </div>
+          <p class="paragraph">ჩვენი მომხმარებლები გვაფასებენ მაღალი ხარისხის სწავლების, მეგობრული მხარდაჭერისა და პრაქტიკაზე ორიენტირებული მიდგომის გამო.</p>
+          </div>
+          <button class="button_outline button_satauri">ყველას ნახვა</button>
+        </div>
+
+        <div class="box_wrapper">
+          <span class="material-symbols-outlined arrow_left_kursebis">arrow_back_ios_new</span>
+
+          <div class="slider_view">
+            <div class="box_container"></div>
+          </div>
+
+          <span class="material-symbols-outlined arrow_right_kursebis">arrow_forward_ios</span>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="cookie">
+      <div id="cookieid" class="cookie-banner">
+      <div class="cookie-icon">🍪</div>
+       <div class="cookie-content">
+       <p class="cookietxt">This site uses cookies to offer you a better browsing experience. Find out more on how we use cookies and how you can change your settings.</p>
+      
+      </div>
+      <div class="button-group">
+      <button id="acceptCookies" class="accept-btn">Accept</button>
+      <button id="refuseCookies" class="refuse-btn">Refuse</button>
+      </div>
+     </div>
+    </section>
+
+    <footer class="section_footer">
+      <div class="footer_container">
+        <div class="footer_left">
+          <div class="logo footer_logo">
+            <img src="./svgs/LOGO.svg" alt="LOGO">
+          </div>
+
+          <div class="footer_middle">
+
+            <div class="footer_columns">
+              <div class="footer_column">
+                <p class="footer_satauri">აკადემია</p>
+                <a href="#">კურსები</a>
+                <a href="#">ვიდეო ლექციები</a>
+                <a href="#">ბიბლიოთეკა</a>
+                <a href="#">კონტაქტი</a>
+              </div>
+
+              <div class="footer_column">
+                <p class="footer_satauri">დახმარება</p>
+                <a href="#">მხარდაჭერა</a>
+                <a href="#">მონაცემთა დაცვა</a>
+                <a href="#">წესები და პირობები</a>
+                <a href="#">დეტალები</a>
+              </div>
+
+              <div class="footer_column">
+                <p class="footer_satauri">რესურსები</p>
+                <a href="#">უფასო ლექციები</a>
+                <a href="#">უფასო ლიტერატურა</a>
+                <a href="#">იუთუბ არხი</a>
+                <a href="#">CV - maker</a>
+              </div>
+        </div>
+
+
+
+      <div class="contact_info">
+        <div class="contact_top">
+          <p class="footer_satauri">გამოიწერე ელ-შეტყობინებები</p>
+          <div class="subscriber">
+            <input 
+              type="email"
+              placeholder="მიუთითე ელფოსტა"
+              class="subscribe_input"
+              required
+            >
+            <button class="footer_button">გაწევრიანდი</button>
+          </div>
+        </div>
+
+      <div class="contact_bottom">
+        <div class="dagvireke">
+          <p class="footer_satauri dagvireke_satauri">დაგვირეკე</p>
+          <div class="number">
+            <img src="./svgs/contact_svgs/phone.svg" alt="Phone">
+            <a href="tel:+995321515451">(+995) 321 51 54 51</a>
+          </div>
+        </div>
+
+        <div class="dagvireke">
+          <p class="footer_satauri dagvireke_satauri">მოგვწერე</p>
+          <div class="number">
+            <img src="./svgs/contact_svgs/email.svg" alt="Email">
+            <a href="mailto:academy@gmail.com">academy@gmail.com</a>
+          </div>
+        </div>
+      </div>
+    </div>
+          </div>
+
+      </div>
+  </div>
+
+  <hr class="footer_line">
+
+  <div class="footer_end">
+    <p class="paragraph">© 2024 ყველა უფლება დაცულია</p>
+
+    <div class="social_media">
+      <a href="#"><img src="./svgs/social_media_svgs/facebook.svg"></a>
+      <a href="#"><img src="./svgs/social_media_svgs/instagram.svg"></a>
+      <a href="#"><img src="./svgs/social_media_svgs/youtube.svg"></a>
+      <a href="#"><img src="./svgs/social_media_svgs/linkedin.svg"></a>
+      <a href="#"><img src="./svgs/social_media_svgs/github.svg"></a>
+    </div>
+  </div>
+    </footer>
+
+  </body>
+</html>

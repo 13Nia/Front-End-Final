@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <link rel="stylesheet" href="./css/style_login.css" />
+    <script src="./js/login.js" defer></script>
+    <title>LOGIN PAGE</title>
+  </head>
+
+  <body>
+    <div class="login_container">
+      <div class="login_container_left">
+        <div class="login_top">
+          <div class="logo logo_login">
+            <img src="./svgs/LOGO.svg" alt="logo" />
+          </div>
+
+          <a href="./index.html">
+            <span class="material-symbols-outlined left_arrow_login">
+              arrow_back_ios_new
+            </span>
+          </a>
+        </div>
+
+        <div class="login_middle">
+          <h2 class="heading2 heading2_login">ავტორიზაცია</h2>
+          <p class="paragraph paragraph_login">
+            შენს ანგარიშზე შესასვლელად, გაიარე ავტორიზაცია
+          </p>
+
+          <form id="loginForm">
+            <input
+              type="email"
+              id="email"
+              placeholder="მომხმარებლის ელ.ფოსტა"
+            />
+
+            <small class="error_text" id="emailError">
+              <span class="material-symbols-outlined error_icon">error</span>
+              <span class="error_message">აუცილებელი ველი</span>
+            </small>
+
+            <div class="password_box">
+              <input type="password" id="password" placeholder="პაროლი" />
+              <img
+                id="togglePassword"
+                class="eye_off"
+                src="./svgs/visibility_svgs/off.svg"
+                alt="eye_off"
+              />
+              <small class="error_text" id="passwordError">
+                <span class="material-symbols-outlined error_icon">error</span>
+                <span class="error_message">აუცილებელი ველი</span>
+              </small>
+            </div>
+
+            <div class="form_row">
+              <label><input type="checkbox" id="check" /> დამახსოვრება</label>
+              <a href="#">დაგავიწყდა პაროლი?</a>
+            </div>
+
+            <button type="submit" class="blue_button">ავტორიზაცია</button>
+
+            <div class="divider">
+              <span>ან შედი ანგარიშით</span>
+            </div>
+
+            <button type="button" class="google_button">
+              <img src="./svgs/google.svg" alt="google_icon" />
+              Google-ით გაგრძელება
+            </button>
+
+            <p class="register">
+              არ გაქვს ანგარიში?
+              <a href="#">რეგისტრაცია</a>
+            </p>
+          </form>
+        </div>
+      </div>
+
+      <div class="login_image">
+        <img src="./images/login_images/login.png" alt="login_image" />
+      </div>
+    </div>
+  </body>
+</html>
